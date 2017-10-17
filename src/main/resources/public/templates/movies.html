@@ -1,0 +1,115 @@
+<div class="row">
+    <div class="col-md-12">
+        <br/><br/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <h1>Films</h1>
+    </div>
+    <div class="col-md-10">
+        <div class=text-right><p class="lead"><a href="" id="linkAddMovie"><font color="#ff3385"><b>Film toevoegen</b></font></a></p></div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <br/>
+    </div>
+</div>
+<div class="row">
+    <table class="table table-hover" id="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Titel</th>
+            <th>Uitgifte datum</th>
+            <th>Score</th>
+            <th>Gezien</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="movieModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id='titleAddMovie'>Film toevoegen</h4>
+                <h4 class="modal-title" id='titleChangeMovie'>Film aanpassen</h4>
+            </div>
+
+
+            <form id="filmToevoegen">
+
+                <div class="modal-body">
+                    <input type="hidden" id="id">
+
+                    <legend></legend>
+
+
+                    <div class="form-group row">
+                        <label for="movieTitle" class="col-sm-4 col-form-label">Titel:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="movieTitle" placeholder="Naam film" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="releaseDate" class="col-sm-4 col-form-label">Uitgifte datum:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="releaseDate" placeholder="Uitgifte datum" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="score" class="col-sm-4 col-form-label">Score:</label>
+                        <div class="col-sm-8">
+                            <input type="Boolean" class="form-control" id="score" placeholder="Score 1- 10" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="watched" class="col-sm-4 col-form-label">Gezien:</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="watched" placeholder="ja/nee" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div id="txtFail"></div>
+                    <button type='button' id='btnAddMovie' class='btn btn-primary'>Voeg toe</button>
+                    <button type='button' id='btnUpdateMovie' class='btn btn-primary'>Pas aan</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<!--<script>-->
+<!--$("#phoneNumber").validate({-->
+<!--rules: {-->
+<!--.text: {-->
+<!--required: true,-->
+<!--digits: true-->
+<!--}-->
+<!--},-->
+<!--messages: {-->
+<!--.text:{-->
+<!--required: " Please enter a score!",-->
+<!--digits: " Please only enter numbers!"-->
+<!--}-->
+<!--},-->
+<!--submitHandler: function(form) {-->
+<!--form.btnAddMovies();-->
+<!--}-->
+<!--});-->
+<!--</script>-->
+<script src="js/movies.js"></script>
