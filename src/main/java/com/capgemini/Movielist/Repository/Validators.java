@@ -1,4 +1,4 @@
-package com.capgemini.repository;
+package com.capgemini.Movielist.Repository;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

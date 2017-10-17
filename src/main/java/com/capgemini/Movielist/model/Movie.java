@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 @Entity
 public class Movie {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
@@ -59,5 +60,21 @@ public class Movie {
     public void setMovieID(long guestID) {
         this.movieID = movieID;
     }
+
+
+    public String getMovieTitle() {
+        return movieTitle;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
 }
+
+
 

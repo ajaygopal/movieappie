@@ -19,7 +19,7 @@ public class MovieController {
 
 
     @Autowired
-    MovieRepository movieRepository;
+    private MovieRepository movieRepository;
 
 
     @RequestMapping (value = "", method = RequestMethod.GET)
@@ -40,7 +40,7 @@ public class MovieController {
         }
     }
 
-    @RequestMapping (value = "", method = RequestMethod.PUT)
+    @RequestMapping (value = "update", method = RequestMethod.PUT)
     public Movie updateMovie (@RequestBody Movie movie) {
         movieRepository.save(movie);
         return movie;

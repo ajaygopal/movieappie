@@ -59,7 +59,7 @@ $("#btnUpdateMovie").click( function (e) {
     $("#txtFail").text("");
     var obj = getObject();
 
-    if ($("#filmToevogegen").validate()) {
+    if ($("#filmToevoegen").validate()) {
             updateMovie(obj);
     }
 })
@@ -130,6 +130,7 @@ function getObject() {
 $(document).ready(function(){
     $('#filmToevoegen').validate();
 });
+
 
 
 
